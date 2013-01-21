@@ -1,0 +1,6 @@
+[submodule "home/.vim"]
+	path = home/.vim
+	url = git://github.com/carlhuda/janus.git
+[submodule "home/.janus/tomorrow-theme"]
+	path = home/.janus/tomorrow-theme
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
