@@ -29,8 +29,8 @@ au VimResized * :wincmd = " Resize splits when the window is resized
 " => Backups, undos and
 "    swap files
 """"""""""""""""""""""""""""""
-set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
+set undodir=~/.vim/tmp/undo/
+set backupdir=~/.vim/tmp/backup/
 set backup
 set noswapfile
 
@@ -91,6 +91,13 @@ if has("gui_macvim")       " If we're running Macvim
         " Turn off the visual/audio bell
         set vb t_vb=
 endif
+
+""""""""""""""""""""""""""""""
+" => Safe pasting
+""""""""""""""""""""""""""""""
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 """"""""""""""""""""""""""""""
 " => Healthy Habits
